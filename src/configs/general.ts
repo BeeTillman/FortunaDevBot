@@ -2,7 +2,7 @@ import { env } from '@/env'
 
 export const generalConfig: GeneralConfigType = {
 
-	name: 'tscord', // the name of your bot
+	name: 'Fortuna Dev Bot', // the name of your bot
 	description: '', // the description of your bot
 	defaultLocale: 'en', // default language of the bot, must be a valid locale
 	ownerId: env.BOT_OWNER_ID,
@@ -13,8 +13,8 @@ export const generalConfig: GeneralConfigType = {
 
 	// useful links
 	links: {
-		invite: 'https://www.change_invite_link_here.com',
-		supportServer: 'https://discord.com/your_invitation_link',
+		invite: 'https://discord.com/oauth2/authorize?client_id=1249477671033897122&permissions=8&integration_type=0&scope=bot+applications.commands',
+		supportServer: 'https://discord.gg/9WKCFqBAap',
 		gitRemoteRepo: 'https://github.com/barthofu/tscord',
 	},
 
@@ -25,12 +25,24 @@ export const generalConfig: GeneralConfigType = {
 	// define the bot activities (phrases under its name). Types can be: PLAYING, LISTENING, WATCHING, STREAMING
 	activities: [
 		{
-			text: 'discord.js v14 with tscord',
+			text: 'ReTerra',
 			type: 'PLAYING',
 		},
 		{
-			text: 'some knowledge',
-			type: 'STREAMING',
+			text: 'BillyTee Solve Endless Bugs',
+			type: 'WATCHING',
+		},
+		{
+			text: 'JT Write Literal Books',
+			type: 'WATCHING',
+		},
+		{
+			text: 'Rowan Create Models',
+			type: 'WATCHING',
+		},
+		{
+			text: 'Pilus Create Models',
+			type: 'WATCHING',
 		},
 	],
 
