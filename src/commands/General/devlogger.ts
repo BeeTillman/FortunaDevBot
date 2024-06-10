@@ -1,8 +1,8 @@
 // Import necessary modules and classes
-import { Category } from '@discordx/utilities'
-import { CommandInteraction, EmbedBuilder, Client, TextChannel, User, ApplicationCommandOptionType } from 'discord.js'
-import { Discord, Slash, SlashOption } from '@/decorators'
-import { Pagination, PaginationType } from '@discordx/pagination'
+import { Category } from '@discordx/utilities';
+import { CommandInteraction, EmbedBuilder, Client, TextChannel, User, ApplicationCommandOptionType } from 'discord.js';
+import { Discord, Slash, SlashOption } from '@/decorators';
+import { Pagination, PaginationType } from '@discordx/pagination';
 
 // Function to split an array into chunks
 function chunkArray<T>(array: T[], chunkSize: number): T[][] {
@@ -22,11 +22,11 @@ export default class DevLoggerCommand {
 	@Slash('devlogger')
 	async devLogger(
 		// Define the command options
-		@SlashOption({name: 'days', type: ApplicationCommandOptionType.Integer, description: 'Number of days to look back', required: false }) days: number,
-		@SlashOption({name: 'user', type: ApplicationCommandOptionType.User, description: 'User to filter by', required: false }) user: User,
-		@SlashOption({name: 'task', type: ApplicationCommandOptionType.String, description: 'Task to filter by', required: false }) task: string,
-		@SlashOption({name: 'require_task', type: ApplicationCommandOptionType.Boolean, description: 'Only show messages with tasks', required: false }) requireTask: boolean,
-		@SlashOption({name: 'show_content', type: ApplicationCommandOptionType.Boolean, description: 'Show or hide message content', required: false }) showContent: boolean,
+		@SlashOption({ name: 'days', type: ApplicationCommandOptionType.Integer, description: 'Number of days to look back', required: false }) days: number,
+		@SlashOption({ name: 'user', type: ApplicationCommandOptionType.User, description: 'User to filter by', required: false }) user: User,
+		@SlashOption({ name: 'task', type: ApplicationCommandOptionType.String, description: 'Task to filter by', required: false }) task: string,
+		@SlashOption({ name: 'require_task', type: ApplicationCommandOptionType.Boolean, description: 'Only show messages with tasks', required: false }) requireTask: boolean,
+		@SlashOption({ name: 'show_content', type: ApplicationCommandOptionType.Boolean, description: 'Show or hide message content', required: false }) showContent: boolean,
 		interaction: CommandInteraction,
 		client: Client
 	) {
