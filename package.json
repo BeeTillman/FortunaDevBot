@@ -24,7 +24,7 @@
     "plugins:install": "installoop --rootDir=./src/plugins",
     "postinstall": "npm run plugins:install",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@discordx/importer": "~1.2.1",
